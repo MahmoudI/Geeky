@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Geek Label</title>
+    <link rel="shortcut icon" href="img/favico.ico"/>
+    <link href="css/reset.css" rel="stylesheet"/>
+    <link href="css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.min.css"/>
+
+</head>
+<body>
+
+    <header>
+        <img src="img/logo.png" alt="logo" class="logo">
+
+        <h1 class="logo-title">
+            Geek Label
+        </h1>
+
+        <p class="slogan">A team of self confessed geeks who are all about<br>great digital design</p>
+        <a href="#sectionDesign" class="btn-circle">
+            <i class="fa fa-angle-down animated"></i>
+        </a>
+    </header>
+
+<section class="full-section" id="sectionDesign">
+    <img src="img/sectionDesign.png" class="img-full" alt="design" >
+
+    <p>Some agencies love <span class="highlight">design,</span> but don't know how to build</p>
+    <a href="#sectionBuild" class="btn-circle">
+        <i class="fa fa-angle-down animated"></i>
+    </a>
+</section>
+
+    <section class="full-section" id="sectionBuild">
+        <img src="img/sectionBuild.png" class="img-full" alt="build" >
+
+        <p>Some agencies know how to  <span class="highlight">build,</span>  but can't do design</p>
+        <a href="#sectionDesignBuild" class="btn-circle">
+            <i class="fa fa-angle-down animated"></i>
+        </a>
+    </section>
+    <section class="full-section" id="sectionDesignBuild">
+        <img src="img/sectionDesignBuild.png" class="img-full" alt="both" >
+
+        <p>We love   <span class="highlight">both</span></p>
+        <a href="#sectionServices" class="btn-circle">
+            <i class="fa fa-angle-down animated"></i>
+        </a>
+    </section>
+
+    <section class="full-section service-section" id="sectionServices">
+        <h2>Services</h2>
+        <ul class="services">
+            <li class="service">
+                <div >
+                    <img src="img/web.png" alt="Web Development">
+                </div>
+                <span>Web Development</span>
+            </li>
+            <li class="service">
+                <div>
+                    <img src="img/design.png" alt="Design">
+                </div>
+                <span>Design</span>
+            </li>
+            <li class="service">
+                <div>
+                    <img src="img/branding.png" alt="Branding">
+                </div>
+                <span>Branding</span>
+            </li>
+            <li class="service">
+                <div>
+                    <img src="img/ux.png" alt="UX Research">
+                </div>
+                <span>UX Research</span>
+            </li>
+
+        </ul>
+
+
+        <a href="#sectionClients" class="btn-circle light">
+            <i class="fa fa-angle-down animated"></i>
+        </a>
+    </section>
+
+    <section class="full-section " id="sectionClients">
+        <h2 class="clients-title">Clients</h2>
+        <ul class="clients">
+            <li class="client">
+                <img src="img/ThePhoto.png" alt="The Photographer Gallery" >
+            </li>
+            <li class="client">
+                <img src="img/Vegan.png" alt="The Vegan Society" >
+            </li>
+            <li class="client">
+                <img src="img/PSHE.png" alt="PSHE Association" >
+            </li>
+            <li class="client">
+                <img src="img/ThePhoto.png" alt="The Photographer Gallery" >
+            </li>
+            <li class="client">
+                <img src="img/Vegan.png" alt="The Vegan Society" >
+            </li>
+            <li class="client">
+                <img src="img/PSHE.png" alt="PSHE Association" >
+            </li>
+        </ul>
+
+
+        <a href="#sectionFindUs" class="btn-circle light">
+            <i class="fa fa-angle-down animated"></i>
+        </a>
+    </section>
+
+    <section class="full-section " id="sectionFindUs">
+        <h2>How to find us</h2>
+        <div id="map"></div>
+        <a href="#sectionContactUs" class="btn-circle">
+            <i class="fa fa-angle-down animated"></i>
+        </a>
+    </section>
+
+    <section class="full-section " id="sectionContactUs">
+        <h2>Contact</h2>
+    <form class="contact-us">
+        <input type="text" id="name" name="name" placeholder="Name" class="form-control">
+        <input type="text" id="email" name="email" placeholder="Email" class="form-control">
+        <textarea rows="4" cols="10" id="message" name="message" placeholder="Message" class="form-control text-area"></textarea>
+        <input type="submit" value="Send Message !" class="form-control btn">
+        <p>Or phone on: 01923 220121 </p>
+
+    </form>
+    </section>
+    <script src="js/jquery-2.2.1.min.js"></script>
+
+    <script src="js/init.js" type="text/javascript"></script>
+    <script src="js/mapManager.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=mapManager.initMap"
+    async defer></script>
+
+</body>
+</html>

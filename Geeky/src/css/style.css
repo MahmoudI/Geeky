@@ -1,0 +1,355 @@
+@font-face {
+    font-family: 'Museo-300';
+    src: url('fonts/museo300.otf');
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Museo-300';
+    color: #fff;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #d83455;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100vh;
+}
+
+.full-section{
+    background-color: #f1f2f3;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100vh;
+    color: #39393a;
+    min-height: 610px;
+}
+
+.full-section p{
+    text-align: center;
+    font-weight: normal;
+    font-size: 1.7em;
+    color: #39393a;
+    letter-spacing: 1px;
+    margin-top: 50px;
+}
+
+.full-section h2{
+    font-weight: bold;
+    font-size: 3em;
+    color: #39393a;
+    letter-spacing: 1px;
+    margin-top: 100px;
+}
+
+img.logo {
+    display: block;
+}
+
+.logo-title{
+    font-family: 'Museo-300';
+    font-size: 3.5em;
+    font-weight: normal;
+    line-height: 42px;
+    margin: 40px 0 85px 0 ;
+}
+
+.slogan{
+    text-align: center;
+    line-height: 1.2em;
+    font-weight: normal;
+    font-size: 1.2em;
+    color: rgba(255,255,255,0.8);
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+
+.btn-circle {
+    width: 50px;
+    height: 50px;
+    margin: 45px 0;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    color: #fff;
+    background: #d83455;
+    font-size: 30px;
+    text-align:center;
+    line-height: 50px;
+}
+
+.btn-circle.light{
+    border: 2px solid #39393a;;
+    border-radius: 100%;
+    color: #39393a;
+    background: #f1f2f3;
+}
+
+.highlight{
+    color: #d83455;
+}
+
+.service-section {
+    background-color: #fffeff;
+}
+.services{
+    list-style: none;
+    margin-top: 100px;
+}
+
+.service {
+    display: inline-block;
+    margin: 0 30px;
+}
+
+.service div{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #d83455;
+    margin-bottom: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.service span {
+    font-weight: normal;
+    font-size: 1.2em;
+    color: #39393a;
+    letter-spacing: 1px;
+    text-align: center;
+    display: block;
+}
+
+#map{
+    height: 400px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.no-scroll{
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.contact-us{
+    margin-top: 50px;
+    width: 470px;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: 60px;
+    padding: 6px 12px;
+    font-size: 1.5em;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    margin-bottom: 10px;
+    color: #39393a;
+}
+
+.contact-us .text-area{
+height: 200px;
+}
+
+.contact-us .btn{
+    background-color: #d83455;;
+}
+
+.contact-us p {
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-size: 1.2em;
+}
+
+/* slider override */
+
+.bx-wrapper .bx-controls-direction a.disabled {
+    display: block!important;
+}
+
+.bx-wrapper {
+    -moz-box-shadow: 0 0 0 #ccc!important;
+    -webkit-box-shadow: 0 0 0 #ccc!important;
+     box-shadow: 0 0 0 #ccc!important;
+     border: 0!important;
+     background: transparent!important;
+}
+
+.clients-title {
+
+    margin-bottom: 200px;
+}
+
+
+/* Google Maps override*/
+.gm-style-iw + div {display: none;}
+
+
+/* Media Queries*/
+
+@media only screen and (min-width: 872px) and ( max-width: 1071px) {
+    .service div {
+        width: 150px;
+        height: 150px;
+    }
+    .service span {
+        font-weight: normal;
+        font-size: 1em;
+        margin-bottom: 1em;
+    }
+}
+
+@media only screen and (min-width: 712px) and (max-width: 872px) {
+    .service{
+        margin: 0 10px;
+        direction: rtl;
+    }
+    .service div {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 20px;
+    }
+    .service span {
+        font-weight: normal;
+        font-size: 1em;
+        margin-bottom: 1em;
+    }
+}
+
+@media only screen and (min-width: 521px) and (max-width: 712px) {
+    .service{
+        margin: 0 10px;
+        direction: rtl;
+    }
+    .service div {
+        width: 100px;
+        height: 100px;
+        margin-bottom:10px;
+    }
+    .service span {
+        font-weight: normal;
+        font-size: 0.7em;
+    }
+    .service img{
+        width: 64px;
+        height: 60px;
+    }
+
+}
+
+
+@media only screen and (min-width: 394px) and (max-width: 521px) {
+    .img-full{
+        max-width: 90%;
+        height: auto;
+    }
+    .service{
+        margin: 0 10px;
+        direction: rtl;
+    }
+    .service div {
+        width: 60px;
+        height: 60px;
+        margin-bottom:10px;
+    }
+    .service span {
+        font-weight: normal;
+        font-size: 0.6em;
+    }
+    .service img{
+        width: 32px;
+        height: 28px;
+    }
+    .contact-us
+    {
+        width: 90%;
+    }
+}
+
+@media only screen and  (max-width: 394px) {
+    .img-full{
+        max-width: 90%;
+        height: auto;
+    }
+    .service{
+        margin: 0 10px;
+        direction: rtl;
+    }
+    .service div {
+        width: 40px;
+        height: 40px;
+        margin-bottom:10px;
+    }
+    .service span {
+        font-weight: normal;
+        font-size: 0.5em;
+    }
+    .service img{
+        width: 24px;
+        height: 20px;
+    }
+
+    .contact-us
+    {
+        width: 90%;
+    }
+}
+/*
+
+@media only screen and (max-width: 480px) {
+    .service div {
+        width: 150px;
+        height: 150px;
+        margin-bottom:10px;
+    }
+    .service span {
+        font-weight: normal;
+        font-size: 1em;
+        margin-bottom: 1em;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .service div {
+        width: 60px;
+        height: 60px;
+        margin-bottom:10px;
+    }
+    .service span {
+        font-weight: normal;
+        font-size: 0.8em;
+    }
+    .service img{
+        width: 32px;
+        height: 32px;
+    }
+}
+*/
+
+
