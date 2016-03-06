@@ -30,6 +30,10 @@ var mapManager = (function($) {
         });
 
         infoWindow.open(map, marker);
+        
+          google.maps.event.addDomListener(window, 'resize', function() {
+            map.setCenter(initialPosition);
+        });
     };
 
     return {
